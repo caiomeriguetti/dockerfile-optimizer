@@ -13,4 +13,14 @@ RUN echo y
 RUN echo z
 
 
+ADD xxx yyy
+
+RUN echo aaa \
+  && echo bbb \
+  && echo ccc
+
+ADD teste t
+
+RUN echo 111 && echo 222
+
 ENTRYPOINT /bin/bash
