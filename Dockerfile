@@ -20,6 +20,16 @@ RUN echo aaa \
   && echo ccc
 
 ADD teste t
+ADD xx yy
+
+RUN echo 10
+RUN echo 11
+RUN echo 12
+RUN echo 13
+RUN echo 14
+RUN echo 15
+
+RUN echo 10 && echo 11 && echo 12
 
 RUN echo 111 && echo 222
 
