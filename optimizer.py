@@ -6,6 +6,8 @@ current_group = []
 all_lines = []
 for line in lines:
     ln = line.strip()
+    if not(ln):
+        continue
     if ln.startswith('RUN'):
         without_run = ln.split("RUN")[1]
         current_group.append(without_run)
