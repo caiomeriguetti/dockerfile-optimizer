@@ -17,4 +17,6 @@ for line in lines:
         all_lines.append(ln)
         current_group = []
 
-print "\n".join(all_lines)
+compiled_content = "\n".join(all_lines)
+
+open('Dockerfile.compiled', 'w+').write(compiled_content)

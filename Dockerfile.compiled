@@ -1,0 +1,26 @@
+FROM ubuntu:16.04
+
+RUN  echo a &&  echo b &&  echo c &&  echo d
+
+
+ADD etc etc/test
+
+RUN  echo x &&  echo y &&  echo z
+
+
+ADD xxx yyy
+
+RUN  echo aaa \
+&& echo bbb \
+&& echo ccc
+
+ADD teste t
+ADD xx yy
+
+RUN  echo 10 &&  echo 11 &&  echo 12 &&  echo 13 &&  echo 14 &&  echo 15
+
+RUN  echo 10 && echo 11 && echo 12
+
+RUN  echo 111 && echo 222
+
+ENTRYPOINT /bin/bash
